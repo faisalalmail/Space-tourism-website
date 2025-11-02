@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="home-body">
+<body class="home-body flex flex-column">
   <header>
-    <img src="assets/shared/logo.svg">
+    <img src="assets/shared/logo.svg" class="logo">
     <img src="assets/shared/icon-hamburger.svg">
     <nav>
       <ul>
@@ -21,16 +21,19 @@
       </ul>
 </nav>
   </header>
-<main>
+<main class=" flex flex-grow">
+  <div class="home-wrapper flex flex-column flex-grow">
+<div class="home-1">
 
-
-  <p>So, you want to travel to</p>
-  <h1>Space</h1>
-  <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+  <p class="text-blue-300 uppercase font-sans-cond tp5">So, you want to travel to</p>
+  <h1 class="tp1 uppercase text-white font-serif">Space</h1>
+  <p class="tp9 text-blue-300 font-sans">Let’s face it; if you want to go to space, you might as well genuinely go to 
   outer space and not hover kind of on the edge of it. Well sit back, and relax 
   because we’ll give you a truly out of this world experience!</p>
-
-  <a>Explore</a>
+</div><div class="home-2">
+  <div class="explore-btn tp4 uppercase font-serif"><a href="destinations.html">Explore</a></div>
+</div>
+  </div>
 </main>
 </body>
 </html>
