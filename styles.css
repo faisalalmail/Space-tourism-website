@@ -66,6 +66,13 @@
     height: 100vh;
 }
 
+.crew-body{
+    background-image: url(assets/crew/background-crew-mobile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 @media (min-width:768px){
     .home-body{
         background-image: url(assets/home/background-home-tablet.jpg);
@@ -102,6 +109,15 @@
 .flex-column{
     flex-direction: column;
 }
+
+.gap-8{
+    gap: var(--sp-8);
+}
+
+.gap-24{
+    gap: var(--sp-24);
+}
+
 
 .gap-12{
     gap: var(--sp-12);
@@ -156,6 +172,9 @@
     font-size: var(--fs-56);
 }
 
+.tp3{
+    font-size: var(--fs-24);
+}
 .tp4{
     font-size: var(--fs-18);
 }
@@ -186,12 +205,27 @@
 }
 
 
+@media (min-width:768px){
+
+    .tp1{
+    font-size: var(--fs-144);
+}
+.tp4{
+    font-size: var(--fs-32);
+}
+
+ .tp5{
+    font-size: var(--fs-24);
+ }
+
+ .tp9{
+    font-size: var(--fs-16);
+}
+}
 
 
 
-
-nav{
-    
+.nav{
     position: absolute;
     height: 100vh;
     top:0;
@@ -200,14 +234,21 @@ nav{
     background-color: hsla(230, 35%, 7%, 0.15);
     backdrop-filter: blur(20px);
     width: 70vw;
+    display: none;
+    flex-direction: column;
+    gap: var(--sp-48);
+    z-index: 10;
 }
 
-nav ul{
+.nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: var(--sp-32);
 }
+
+
+
 
 /*blocks*/
 
@@ -223,6 +264,8 @@ header{
 main{
     padding: var(--sp-24);
 }
+
+
 
 
 /*Specifics*/
@@ -244,6 +287,7 @@ hr{
     text-align: center;
 }
 
+
 .home-2{
     display: flex;
 
@@ -263,7 +307,8 @@ hr{
 
 }
 
-.destination-wrapper{
+
+.destination-wrapper,.crew-wrapper{
     display: flex;
     flex-direction: column;
     gap: var(--sp-24);
@@ -324,4 +369,77 @@ hr{
 
 .close-btn-div{
     padding-bottom: var(--sp-32);
+    align-items: center;
+}
+
+.close-btn-div img{
+    float: right;
+}
+
+.nav-link.active{
+    position: relative;
+}
+
+.nav-link.active::after{
+    position: fixed;
+    height: 1rem;
+    right: 0;
+    width: 3px;
+    content:"";
+    background: white;
+}
+
+.crew-details{
+    padding-top: var(--sp-40);
+    padding-bottom: var(--sp-40);
+}
+
+
+
+
+@media (min-width:768px){
+        header{
+        padding: 0;
+    }
+
+
+    .nav{
+        display: block;
+        position: relative;
+        height: auto;
+        background-color: hsla(360, 100%, 100%,0.05);
+    }
+
+    .nav ul{
+        flex-direction: row;
+    }
+
+    .close-btn-div,.open-nav-btn{
+        display: none;
+    }
+
+
+    .nav-link.active::after{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        height: 3px;
+        content: "";
+        left: 0;
+        top: 100%;
+
+    }
+ .explore-btn{
+    height: 272px;
+    width: 272px;
+ }
+
+    .home-1{
+        max-width: 72%;
+        margin: auto;
+    }
+
+        main{
+    padding: var(--sp-40);
+}
 }

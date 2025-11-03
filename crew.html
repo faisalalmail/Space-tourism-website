@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="nav.js" defer></script>
+<link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="crew-body">
+  <header>
+    <img src="assets/shared/logo.svg" class="logo">
+    <img src="assets/shared/icon-hamburger.svg" onclick="openNav()">
+    <nav id="nav">
+      <div class="close-btn-div">
+      <img src="assets/shared/icon-close.svg" onclick="closeNav()">
+      </div>
+      <ul>
+  <li class="nav-link"><a class="text-white uppercase font-sans-cond tp8" href="index.html"><span class="fw-bold">00</span>  Home</a></li>
+  <li class="nav-link"><a class="text-white uppercase font-sans-cond tp8 " href="destinations.html"><span class="fw-bold">01</span>  Destination</a></li>
+  <li class="nav-link active"><a class="text-white uppercase font-sans-cond tp8" href="crew.html"><span class="fw-bold">02</span>  Crew</a></li>
+  <li class="nav-link"><a class="text-white uppercase font-sans-cond tp8" href="technology.html"><span class="fw-bold">03</span>  Technology</a></li>
+      </ul>
+</nav>
+  </header>
+  <main>
+    <div class="crew-wrapper">
+      <div>
+  <p class="tp5 text-white uppercase font-sans-cond text-center"><span class="text-white-25 fw-bold margin-r-16">02</span> Meet your crew</p>
+      </div>
+      <div>
+        <div class="flex flex-column gap-24 crew-details">
+          <div class="flex flex-column gap-8">
+  <p class="tp4 text-white-25 uppercase font-serif text-center">Commander</p>
+  <p class="text-white uppercase font-serif tp3 text-center">Douglas Hurley</p>
+          </div>
+  <p class="tp9 text-blue-300 font-sans text-center">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+  and former NASA astronaut. He launched into space for the third time as 
+  commander of Crew Dragon Demo-2.</p>
+        </div>
+        <div>
+          <img src="assets/crew/image-douglas-hurley.webp" style="width: 100%;">
+        </div>
+      </div>
+  </div>
+  </main>
+</body>
+</html>
