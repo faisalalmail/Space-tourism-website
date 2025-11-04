@@ -77,12 +77,22 @@
     .home-body{
         background-image: url(assets/home/background-home-tablet.jpg);
     }
+
+    .destinations-body{
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        
+    }
 }
 
 @media (min-width:1440px){
     .home-body{
     background-image: url(assets/home/background-home-desktop.jpg);
 }
+        .destinations-body{
+        background-image: url(assets/destination/background-destination-desktop.jpg);
+        height: 100vh;
+    }
+
 }
 
 /*Utility classes*/
@@ -210,6 +220,11 @@
     .tp1{
     font-size: var(--fs-144);
 }
+
+.tp2{
+    font-size: var(--fs-80);
+}
+
 .tp4{
     font-size: var(--fs-32);
 }
@@ -218,8 +233,22 @@
     font-size: var(--fs-24);
  }
 
+ .tp8{
+    font-size: var(--fs-16);
+    letter-spacing:2.4px;
+}
+
  .tp9{
     font-size: var(--fs-16);
+}
+}
+
+@media (min-width:1440px){
+
+
+
+     .tp9{
+    font-size: var(--fs-18);
 }
 }
 
@@ -338,7 +367,9 @@ hr{
 .destinations-list{
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    gap: var(--sp-32);
+    margin: auto;
+    padding-bottom: var(--sp-24);
 }
 
 
@@ -394,24 +425,52 @@ hr{
     padding-bottom: var(--sp-40);
 }
 
+#hide-on-mid{
+    display: none;
+}
 
+.crew-switcher{
+    display: flex;
+    gap: var(--sp-8);
+}
+.circle{
+    background-color: hsla(360, 100%, 100%,0.18);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
 
+.circle.active{
+    background-color: white;
+}
 
 @media (min-width:768px){
         header{
         padding: 0;
     }
 
+    .planet-img{
+    width: 300px;
+}
 
     .nav{
         display: block;
         position: relative;
         height: auto;
         background-color: hsla(360, 100%, 100%,0.05);
+        width: 80%;
+        padding: var(--sp-40);
+        max-width: 43rem;
+        z-index: 9;
     }
 
     .nav ul{
         flex-direction: row;
+        gap: var(--sp-48);
+        justify-content: end;
+    }
+
+    .nav ul li{
     }
 
     .close-btn-div,.open-nav-btn{
@@ -426,7 +485,7 @@ hr{
         height: 3px;
         content: "";
         left: 0;
-        top: 100%;
+        bottom: -2.5rem;
 
     }
  .explore-btn{
@@ -442,4 +501,135 @@ hr{
         main{
     padding: var(--sp-40);
 }
+
+#hide-on-mid{
+    display: none;
+}
+
+.logo{
+    width: 48px;
+    align-self: center;
+    vertical-align: middle;
+
+}
+
+.logo-div{
+    text-align: center;
+}
+
+
+.step{
+    text-align: left;
+}
+
+.travel-details{
+flex-direction: row;
+margin: auto;
+width: 100%;
+justify-content: space-around
+}
+
+.planet-details{
+    max-width: 32rem;
+    margin: auto;
+}
+
+}
+
+
+@media (min-width:1440px){
+    #hide-on-mid{
+    display: inline;
+}
+
+header{
+    padding-top: var(--sp-40);
+}
+
+.header-line{
+    flex-grow: 1;
+    height: 1px;
+    background: hsla(360, 100%, 100%,0.25);
+     margin-right: -32px;
+     z-index: 10;
+    
+}
+
+    .planet-img{
+    width: 480px;
+}
+
+
+.logo-div{
+    text-align: center;
+    flex-grow: 0;
+    padding-left: var(--sp-64);
+    padding-right: var(--sp-64);
+
+}
+
+.home-main{
+    padding: var(--sp-128);
+}
+
+.destination-main{
+    padding: var(--sp-48);
+}
+
+.home-wrapper{
+    flex-direction: row;
+    
+    align-items: end;
+    align-content: end;
+    
+}
+
+.destination-wrapper{
+    margin: auto;
+    width: fit-content;
+}
+
+
+
+.destination-info{
+    flex-direction: row;
+    gap: var(--sp-32);
+    padding-top: var(--sp-24);
+}
+
+.home-1{
+    margin-bottom: 0;
+    text-align: left;
+    max-width: 34rem;
+}
+
+ .explore-btn{
+    margin-right: 0;
+ }
+
+.destinations-list{
+    margin-left: 0;
+}
+
+#destination-name,#destination-description{
+    text-align: left;
+}
+
+.travel-details{
+    margin-left: 0;
+    text-align: left;
+}
+
+.travel-details div{
+    text-align: left;
+
+    flex-grow: 1;
+}
+
+.planet-details{
+gap: var(--sp-40);
+padding: var(--sp-32);
+
+}
+
 }

@@ -11,24 +11,27 @@
 </head>
 <body class="destinations-body">
   <header>
+    <div class="logo-div flex-grow">
     <img src="assets/shared/logo.svg" class="logo">
-    <img src="assets/shared/icon-hamburger.svg" onclick="openNav()">
-    <nav id="nav">
+    </div>
+    <div class="header-line"></div>
+    <img src="assets/shared/icon-hamburger.svg" onclick="openNav()" class="open-nav-btn">
+    <nav id="nav" class="nav">
       <div class="close-btn-div">
       <img src="assets/shared/icon-close.svg" onclick="closeNav()">
       </div>
       <ul>
-  <li class="nav-link"><a class="text-white uppercase font-sans-cond tp8" href="index.html"><span class="fw-bold">00</span>  Home</a></li>
-  <li class="nav-link active"><a class="text-white uppercase font-sans-cond tp8 " href="destinations.html"><span class="fw-bold">01</span>  Destination</a></li>
-  <li><a class="text-white uppercase font-sans-cond tp8" href="crew.html"><span class="fw-bold">02</span>  Crew</a></li>
-  <li><a class="text-white uppercase font-sans-cond tp8" href="technology.html"><span class="fw-bold">03</span>  Technology</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link" href="index.html"><span class="fw-bold" id="hide-on-mid">00</span>  Home</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link active" href="destinations.html"><span class="fw-bold">01</span>  Destination</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link" href="crew.html"><span class="fw-bold">02</span>  Crew</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link"><span class="fw-bold">03</span>  Technology</a></li>
       </ul>
 </nav>
   </header>
   <main>
     <div class="destination-wrapper">
-      <div>
-  <p class="tp5 text-white uppercase font-sans-cond text-center"><span class="text-white-25 fw-bold margin-r-16">01</span> Pick your destination</p>
+      <div class="">
+  <p class="tp5 text-white uppercase font-sans-cond text-center step"><span class="text-white-25 fw-bold margin-r-16">01</span> Pick your destination</p>
       </div>
       <div class="destination-info">
         <div class="planet-img-div self-center">

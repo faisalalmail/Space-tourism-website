@@ -10,21 +10,24 @@
 </head>
 <body class="home-body flex flex-column">
   <header>
+    <div class="logo-div flex-grow">
     <img src="assets/shared/logo.svg" class="logo">
+    </div>
+    <div class="header-line"></div>
     <img src="assets/shared/icon-hamburger.svg" onclick="openNav()" class="open-nav-btn">
     <nav id="nav" class="nav">
       <div class="close-btn-div">
       <img src="assets/shared/icon-close.svg" onclick="closeNav()">
       </div>
       <ul>
-  <li><a class="text-white uppercase font-sans-cond tp8 nav-link active" href="index.html"><span class="fw-bold">00</span>  Home</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link active" href="index.html"><span class="fw-bold" id="hide-on-mid">00</span>  Home</a></li>
   <li><a class="text-white uppercase font-sans-cond tp8 nav-link" href="destinations.html"><span class="fw-bold">01</span>  Destination</a></li>
-  <li><a class="text-white uppercase font-sans-cond tp8 nav-link"><span class="fw-bold">02</span>  Crew</a></li>
+  <li><a class="text-white uppercase font-sans-cond tp8 nav-link" href="crew.html"><span class="fw-bold">02</span>  Crew</a></li>
   <li><a class="text-white uppercase font-sans-cond tp8 nav-link"><span class="fw-bold">03</span>  Technology</a></li>
       </ul>
 </nav>
   </header>
-<main class=" flex flex-grow">
+<main class=" flex flex-grow home-main">
   <div class="home-wrapper flex flex-column flex-grow">
 <div class="home-1">
 
