@@ -6,6 +6,8 @@ function openNav(){
 }
 
 
+
+
 function closeNav(){
     console.log("close nav called")
     document.getElementById("nav").style.display = "none"
