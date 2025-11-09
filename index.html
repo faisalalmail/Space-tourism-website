@@ -11,14 +11,17 @@
 <body class="home-body flex flex-column">
   <header>
     <div class="logo-div flex-grow">
-    <img src="assets/shared/logo.svg" class="logo">
+    <img src="assets/shared/logo.svg" class="logo" alt="logo">
     </div>
     <div class="header-line"></div>
-    <img src="assets/shared/icon-hamburger.svg" onclick="openNav()" class="open-nav-btn">
+    <button class="open-nav-btn" aria-label="Open navigation menu" onclick="openNav()">
+  <img src="assets/shared/icon-hamburger.svg" alt="" aria-hidden="true">
+</button>
     <nav id="nav" class="nav">
-      <div class="close-btn-div">
-      <img src="assets/shared/icon-close.svg" onclick="closeNav()">
-      </div>
+          <!-- Button for closing nav with accessible label -->
+    <button class="close-btn-div" aria-label="Close navigation menu" onclick="closeNav()">
+      <img src="assets/shared/icon-close.svg" alt="" aria-hidden="true">
+    </button>
       <ul>
   <li><a class="text-white uppercase font-sans-cond tp8 nav-link active" href="index.html"><span class="fw-bold" id="hide-on-mid">00</span>  Home</a></li>
   <li><a class="text-white uppercase font-sans-cond tp8 nav-link" href="destinations.html"><span class="fw-bold">01</span>  Destination</a></li>
